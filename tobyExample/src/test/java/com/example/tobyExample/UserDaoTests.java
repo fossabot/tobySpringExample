@@ -14,7 +14,7 @@ class UserDaoTests {
 
     @BeforeEach
     public void setUp() {
-        userDao = new UserDao();
+        userDao = new MysqlUserDao();
 
         user = User.builder()
                 .id("wlsdl8012")

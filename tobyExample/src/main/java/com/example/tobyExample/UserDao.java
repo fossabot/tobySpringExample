@@ -2,16 +2,16 @@ package com.example.tobyExample;
 
 import java.sql.*;
 
-public class UserDao {
+public abstract class UserDao {
+
+    // TODO: 2019-12-17
+    // 데이터 베이스로 부터 연결객체를 가져오는 관심사의 분리
+    //  - 관심사를 method로 분리
+    //  - 관심사의 method를 확장 -> 확장의 방법 이용 -> template method pattern
 
     public Integer getCount() throws ClassNotFoundException, SQLException {
 
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection c = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/javadb?serverTimezone=GMT",
-                "root",
-                "1234"
-        );
+        Connection c = getConnection();
 
         PreparedStatement ps = c.prepareStatement("select count(*) from users");
         ResultSet rs = ps.executeQuery();
@@ -29,12 +29,7 @@ public class UserDao {
 
     public void add(User user) throws ClassNotFoundException, SQLException {
 
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection c = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/javadb?serverTimezone=GMT",
-                "root",
-                "1234"
-        );
+        Connection c = getConnection();
 
         PreparedStatement ps = c.prepareStatement("insert into users (id, name, password) values (?, ?, ?)");
         ps.setString(1, user.getId());
@@ -50,12 +45,7 @@ public class UserDao {
 
     public void deleteAll() throws SQLException, ClassNotFoundException {
 
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection c = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/javadb?serverTimezone=GMT",
-                "root",
-                "1234"
-        );
+        Connection c = getConnection();
 
         PreparedStatement ps = c.prepareStatement("delete from users");
 
@@ -68,12 +58,7 @@ public class UserDao {
 
     public User get(String id) throws SQLException, ClassNotFoundException {
 
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection c = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/javadb?serverTimezone=GMT",
-                "root",
-                "1234"
-        );
+        Connection c = getConnection();
 
         PreparedStatement ps = c.prepareStatement("select id, name, password from users where id=?");
         ps.setString(1, id);
@@ -95,4 +80,6 @@ public class UserDao {
 
         return got;
     }
+
+    protected abstract Connection getConnection() throws SQLException, ClassNotFoundException;
 }
