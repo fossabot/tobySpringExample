@@ -9,12 +9,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class UserDaoTests {
 
+    private DaoFactory daoFactory;
     private UserDao userDao;
     private User user;
 
     @BeforeEach
     public void setUp() {
-        userDao = new UserDao(new SimpleConnectionMaker()); // 의존하는 객체를 여기서 결정
+        daoFactory = new DaoFactory();
+
+        userDao = daoFactory.userDao();
 
         user = User.builder()
                 .id("wlsdl8012")
