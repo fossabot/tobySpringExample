@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class UserDao {
 
-    // TODO: 2019-12-20 객체의 관계 설정 책임을 분리
+    // TODO: 2019-12-20 스프링 DI를 사용해서 관계설정
 
     private ConnectionMaker connectionMaker;
 

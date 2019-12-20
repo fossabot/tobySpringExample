@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e054ef20-6825-4ce1-b451-653ed3c83fd3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tobyExample/DaoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tobyExample/DaoFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tobyExample/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/tobyExample/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/tobyExample/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tobyExample/UserDaoTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tobyExample/UserDaoTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tobyExample/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tobyExample/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tobyExample/UserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tobyExample/UserDaoTests.java" afterDir="false" />
     </list>
@@ -29,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tobyExample/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="469">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
               <folding>
                 <element signature="e#218#219#0" expanded="true" />
                 <element signature="e#272#273#0" expanded="true" />
@@ -46,11 +43,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tobyExample/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#410#411#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tobyExample/UserDaoTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            <state relative-caret-position="225">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getCount_add_countIncrease#0;class#UserDaoTests#0" />
@@ -65,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tobyExample/DaoFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="25">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -77,8 +90,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -94,14 +107,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/tobyExample/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/tobyExample/ConnectionMaker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/tobyExample/SimpleConnectionMaker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/tobyExample/UserDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tobyExample/DaoFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/tobyExample/DaoFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tobyExample/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tobyExample/Application.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tobyExample/UserDaoTests.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-786" />
     <option name="y" value="408" />
     <option name="width" value="1948" />
@@ -114,7 +128,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,13 +161,39 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tobyExample" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tobyExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tobyExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="tobyExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tobyExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tobyExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tobyExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tobyExample" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -290,15 +329,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTests_get_add_sameName - 2019.12.17 at 16h 47m 15s.xml">
-      <configuration name="UserDaoTests.get_add_sameName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTests_get_add_sameName - 2019.12.17 at 16h 54m 48s.xml">
-      <configuration name="UserDaoTests.get_add_sameName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTests_get_add_sameName - 2019.12.17 at 16h 56m 10s.xml">
-      <configuration name="UserDaoTests.get_add_sameName" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserDaoTests - 2019.12.17 at 17h 07m 54s.xml">
       <configuration name="UserDaoTests" configurationId="JUnit" />
     </history-entry>
@@ -320,12 +350,21 @@
     <history-entry file="DaoFactoryTest - 2019.12.20 at 16h 24m 21s.xml">
       <configuration name="DaoFactoryTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DaoFactoryTest - 2019.12.20 at 16h 26m 13s.xml">
+      <configuration name="DaoFactoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTests - 2019.12.20 at 16h 26m 17s.xml">
+      <configuration name="UserDaoTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTests - 2019.12.20 at 16h 42m 14s.xml">
+      <configuration name="UserDaoTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1618" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23234917" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18228498" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -338,7 +377,7 @@
       <window_info id="Learn" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34228188" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34228188" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -406,10 +445,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tobyExample/DaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tobyExample/UserDaoTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getCount_add_countIncrease#0;class#UserDaoTests#0" />
+            <element signature="method#add_countIncrease#0;class#UserDaoTests#0" />
+            <element signature="method#deleteAll_countIsZero#0;class#UserDaoTests#0" />
+            <element signature="method#get_add_sameName#0;class#UserDaoTests#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tobyExample/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tobyExample/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="469">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
           <folding>
             <element signature="e#218#219#0" expanded="true" />
             <element signature="e#272#273#0" expanded="true" />
@@ -417,27 +491,6 @@
             <element signature="method#add#0;class#UserDao#0" />
             <element signature="method#deleteAll#0;class#UserDao#0" />
             <element signature="method#get#0;class#UserDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tobyExample/DaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tobyExample/UserDaoTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getCount_add_countIncrease#0;class#UserDaoTests#0" />
-            <element signature="method#add_countIncrease#0;class#UserDaoTests#0" />
-            <element signature="method#deleteAll_countIsZero#0;class#UserDaoTests#0" />
-            <element signature="method#get_add_sameName#0;class#UserDaoTests#0" />
           </folding>
         </state>
       </provider>

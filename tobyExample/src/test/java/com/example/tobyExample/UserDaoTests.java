@@ -2,23 +2,27 @@ package com.example.tobyExample;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.sql.SQLException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = Application.class)
 class UserDaoTests {
 
-    private DaoFactory daoFactory;
+    @Autowired
     private UserDao userDao;
+
     private User user;
 
     @BeforeEach
     public void setUp() {
-        daoFactory = new DaoFactory();
-
-        userDao = daoFactory.userDao();
-
         user = User.builder()
                 .id("wlsdl8012")
                 .name("Jin")
