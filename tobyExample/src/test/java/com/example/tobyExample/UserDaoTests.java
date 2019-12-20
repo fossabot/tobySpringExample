@@ -14,7 +14,7 @@ class UserDaoTests {
 
     @BeforeEach
     public void setUp() {
-        userDao = new MysqlUserDao();
+        userDao = new UserDao(new SimpleConnectionMaker()); // 의존하는 객체를 여기서 결정
 
         user = User.builder()
                 .id("wlsdl8012")

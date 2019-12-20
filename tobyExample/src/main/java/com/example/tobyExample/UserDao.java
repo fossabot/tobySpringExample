@@ -2,16 +2,19 @@ package com.example.tobyExample;
 
 import java.sql.*;
 
-public abstract class UserDao {
+public class UserDao {
 
-    // TODO: 2019-12-17
-    // 데이터 베이스로 부터 연결객체를 가져오는 관심사의 분리
-    //  - 관심사를 method로 분리
-    //  - 관심사의 method를 확장 -> 확장의 방법 이용 -> template method pattern
+    // TODO: 2019-12-20 객체의 관계 설정 책임을 분리 
+
+    private ConnectionMaker connectionMaker;
+
+    public UserDao(ConnectionMaker connectionMaker) {
+        this.connectionMaker = connectionMaker;
+    }
 
     public Integer getCount() throws ClassNotFoundException, SQLException {
 
-        Connection c = getConnection();
+        Connection c = connectionMaker.makeConnection();
 
         PreparedStatement ps = c.prepareStatement("select count(*) from users");
         ResultSet rs = ps.executeQuery();
@@ -29,7 +32,7 @@ public abstract class UserDao {
 
     public void add(User user) throws ClassNotFoundException, SQLException {
 
-        Connection c = getConnection();
+        Connection c = connectionMaker.makeConnection();
 
         PreparedStatement ps = c.prepareStatement("insert into users (id, name, password) values (?, ?, ?)");
         ps.setString(1, user.getId());
@@ -45,7 +48,7 @@ public abstract class UserDao {
 
     public void deleteAll() throws SQLException, ClassNotFoundException {
 
-        Connection c = getConnection();
+        Connection c = connectionMaker.makeConnection();
 
         PreparedStatement ps = c.prepareStatement("delete from users");
 
@@ -58,7 +61,7 @@ public abstract class UserDao {
 
     public User get(String id) throws SQLException, ClassNotFoundException {
 
-        Connection c = getConnection();
+        Connection c = connectionMaker.makeConnection();
 
         PreparedStatement ps = c.prepareStatement("select id, name, password from users where id=?");
         ps.setString(1, id);
@@ -81,5 +84,4 @@ public abstract class UserDao {
         return got;
     }
 
-    protected abstract Connection getConnection() throws SQLException, ClassNotFoundException;
 }

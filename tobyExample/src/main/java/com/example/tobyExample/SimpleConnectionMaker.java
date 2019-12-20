@@ -4,14 +4,17 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class MysqlUserDao extends UserDao {
-    @Override
-    protected Connection getConnection() throws SQLException, ClassNotFoundException {
+public class SimpleConnectionMaker implements ConnectionMaker {
+
+    public Connection makeConnection() throws ClassNotFoundException, SQLException {
+
         Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/javadb?serverTimezone=GMT",
                 "root",
                 "1234"
         );
+
     }
+
 }
