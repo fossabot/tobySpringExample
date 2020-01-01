@@ -12,7 +12,7 @@ public class SimpleConnectionMaker implements ConnectionMaker {
         return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/javadb?serverTimezone=GMT",
                 "root",
-                "1234"
+                "12341234"
         );
 
     }
